@@ -1,0 +1,4 @@
+// Tambahkan baris berikut di routes/web.php (jangan hapus route lain):
+use Illuminate\Support\Facades\Route;
+
+Route::view('/', 'home');

@@ -1,0 +1,21 @@
+TEMPLATE TITIPPASARAPP - LARAVEL
+
+CARA MEMASANG:
+1. Ekstrak ZIP ini.
+2. Buka folder hasil ekstrak.
+3. Salin folder "resources" dan "public" ke folder utama project Laravel TitipPasarApp.
+4. Jika Windows menanyakan penggabungan folder, pilih Merge/Gabungkan. Jika ada file bernama sama, pilih jangan timpa kecuali memang ingin mengganti.
+5. Buka routes/web.php di project Laravel.
+6. Tambahkan route ini (jangan menghapus route lain):
+   Route::view('/', 'home');
+   Pastikan di bagian atas sudah ada:
+   use Illuminate\Support\Facades\Route;
+7. Jalankan terminal di folder utama project:
+   php artisan serve
+8. Buka http://127.0.0.1:8000
+
+CATATAN:
+- Template ini memakai Bootstrap 5 dan Bootstrap Icons melalui CDN, jadi koneksi internet diperlukan untuk memuat styling dan ikon.
+- Gambar produk memakai URL gambar contoh dari Unsplash.
+- Produk dan harga masih data contoh, belum tersambung database/CRUD.
+- File Controller.php bawaan Laravel tidak perlu diubah.
